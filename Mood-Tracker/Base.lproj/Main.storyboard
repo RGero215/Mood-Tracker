@@ -85,7 +85,7 @@
                         <barButtonItem key="leftBarButtonItem" title="Calendar" id="d2e-3G-k0g"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="qrO-Xp-q1M">
                             <connections>
-                                <action selector="pressAddEntry:" destination="BYZ-38-t0r" id="sJt-eq-NOD"/>
+                                <segue destination="Q2J-rQ-XmQ" kind="show" identifier="show new entry" id="m5I-ix-VUe"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -204,7 +204,7 @@
                     <navigationItem key="navigationItem" title="Details" id="3lc-ay-nHA" userLabel="Details">
                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="8p4-gB-S2n" userLabel="Cancel">
                             <connections>
-                                <action selector="pressCancel:" destination="Q2J-rQ-XmQ" id="etd-57-Fk8"/>
+                                <segue destination="YWb-8L-fUI" kind="unwind" unwindAction="unwindToHome:" id="6z4-O2-dpb"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Save" id="KxA-MP-uPD" userLabel="Save">
@@ -223,6 +223,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bpl-cm-j50" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="YWb-8L-fUI" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1676.8115942028987" y="20.758928571428569"/>
         </scene>
@@ -245,4 +246,7 @@
             <point key="canvasLocation" x="47.826086956521742" y="20.758928571428569"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="m5I-ix-VUe"/>
+    </inferredMetricsTieBreakers>
 </document>

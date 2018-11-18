@@ -11,6 +11,7 @@ import UIKit
 class MoodDetailedViewController: UIViewController {
     var date: Date!
     var mood: MoodEntry.Mood!
+    var isEditingEntry = false
     
     @IBOutlet weak var buttonAmazingMood: UIButton!
     @IBOutlet weak var buttonGoodMood: UIButton!
@@ -27,12 +28,9 @@ class MoodDetailedViewController: UIViewController {
     }
     
     @IBAction func pressSave(_ sender: UIBarButtonItem) {
-        
+        performSegue(withIdentifier: "unwind from save", sender: nil)
     }
     
-    @IBAction func pressCancel(_ sender: UIBarButtonItem) {
-        
-    }
     @IBAction func datePickerDidChangeValue(_ sender: UIDatePicker) {
         date = datePicker.date
     }
