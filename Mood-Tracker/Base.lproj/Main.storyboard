@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Hhg-5U-6w4">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="mood entry cell" rowHeight="72" id="81Y-pr-x0H" customClass="MoodEntryTableViewCell" customModule="Mood_Tracker" customModuleProvider="target">
@@ -106,7 +106,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="tE7-FO-5uJ">
-                                <rect key="frame" x="20" y="119" width="374" height="743"/>
+                                <rect key="frame" x="20" y="75" width="374" height="787"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mood" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DXN-Dg-PEX">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="24"/>
@@ -181,7 +181,7 @@
                                         </subviews>
                                     </stackView>
                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="jP7-QX-aSL">
-                                        <rect key="frame" x="0.0" y="389" width="374" height="354"/>
+                                        <rect key="frame" x="0.0" y="389" width="374" height="398"/>
                                         <date key="date" timeIntervalSinceReferenceDate="564249623.17017996">
                                             <!--2018-11-18 16:00:23 +0000-->
                                         </date>
@@ -210,6 +210,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Save" id="KxA-MP-uPD" userLabel="Save">
                             <connections>
                                 <action selector="pressSave:" destination="Q2J-rQ-XmQ" id="sCz-sU-nvS"/>
+                                <segue destination="BYZ-38-t0r" kind="show" identifier="unwind from save" id="DRW-DV-WNr"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -247,6 +248,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="m5I-ix-VUe"/>
+        <segue reference="vFH-x1-2n6"/>
+        <segue reference="DRW-DV-WNr"/>
     </inferredMetricsTieBreakers>
 </document>
